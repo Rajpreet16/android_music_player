@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <!-- THIS FILE IS LIKE A LAYOUT. SINCE IN OUR NAVIGATION DRAWER WE NEED
+    ONE IMAGE AND ONE TEXT, WE CREATE ONE LAYOUT FOR IT AND USE IT WITH THE HELP
+    OF ADAPTER -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    >
+    <!--RELATIVE LAYOUT IS FOR THE ONE BOX -->
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/navdrawer_item_content_holder"
+        android:layout_marginTop="15dp"
+        >
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/icon_navdrawer"
+            android:layout_marginLeft="13dp"
+            />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/text_navdrawer"
+            android:layout_marginLeft="17dp"
+            android:layout_marginBottom="15dp"
+            android:layout_toRightOf="@+id/icon_navdrawer"
+            android:textColor="#212121"
+
+        />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_marginRight="17dp"
+        android:background="#eee"/>
+
+</LinearLayout>
